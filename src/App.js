@@ -58,11 +58,6 @@ const App = () => {
     <div className="ag-theme-alpine" style={{ height: 400, width: 600 }}>
       <button onClick={onButtonClick}>Get selected rows</button>
       <AgGridReact
-        // frameworkComponents={{ agColumnHeader: HeaderComponent }}
-
-        // columnDefs={{
-        //   headerComponent: HeaderComponent
-        // }}
         rowData={rowData} rowSelection="multiple">
 
           {
@@ -74,9 +69,7 @@ const App = () => {
           }
         
       </AgGridReact>
-
       <AgGridReact defaultColDef={defaultColDef}>
-        {/* column definitions ... */}
       </AgGridReact>
     </div>
   );
